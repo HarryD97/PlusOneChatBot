@@ -1,0 +1,14 @@
+langchain
+pinecone-client
+tqdm
+openai
+pandas
+matplotlib
+PyMuPDF
+requests
+beautifulsoup4
+langchain_openai
+wheel
+streamlit
+langchain-community
+langchain_pinecone
