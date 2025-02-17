@@ -80,8 +80,8 @@ def query(user_query):
     # Build context using metadata keys: "url" and "text"
     for result in results:
         url = result.metadata.get('url', 'N/A')
-        chunk = result.metadata.get('text', 'N/A')
-        context += f"URL: {url} | Chunk: {chunk}\n"
+        text = result.page_content
+        context += f"URL: {url} | Text: {text}\n"
         related_urls.add(url)
     
     prompt = generate_prompt(user_query, context)
